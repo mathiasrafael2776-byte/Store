@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteShopBR Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>ByteShopBR</h1>
+    </header>
+    <main>
+        <section id="products">
+            <div class="product" data-id="1">
+                <h2>iPhone 16</h2>
+                <p>Latest model of iPhone with amazing features.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2">
+                <h2>Headset Redragon</h2>
+                <p>High-quality gaming headset.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3">
+                <h2>Mouse ATTACK SHARK R1</h2>
+                <p>Ergonomic mouse for gaming.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="4">
+                <h2>Mouse ATTACK SHARK R11 Ultra</h2>
+                <p>Ultra fast gaming mouse.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="5">
+                <h2>Mouse Pad Estendido</h2>
+                <p>Large mouse pad for gamers.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="6">
+                <h2>Mouse Pad RGB</h2>
+                <p>RGB lighting mouse pad.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="7">
+                <h2>Motorola Moto g86</h2>
+                <p>Smartphone with exceptional battery life.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section id="shopping-cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="checkout">Checkout</button>
+        </section>
+        <div id="checkout-form-modal" class="modal">
+            <form id="checkout-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" required>
+                <button type="submit">Submit</button>
+                <button type="button" id="close-modal">Close</button>
+            </form>
+        </div>
+        <div id="success-modal" class="modal">
+            <p>Thank you for your purchase!</p>
+            <button id="close-success">Close</button>
+        </div>
+    </main>
+</body>
+</html>
